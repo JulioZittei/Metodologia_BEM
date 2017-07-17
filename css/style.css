@@ -29,10 +29,22 @@ header img {
     padding: 80px 0;
 }
 
+#plans::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 article {
     border:1px solid #95a4a5;
     width: 370px;
     padding: 10px;
+    float: left;
+    margin-right: 30px;
+}
+
+article:last-of-type {
+    margin-right: 0;
 }
 
 article > h2 {
@@ -64,4 +76,17 @@ article > ul > li {
 
 article > footer {
     text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #127d00;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.button:hover, .button:focus {
+    background-color:#0e6400 ;
+
 }

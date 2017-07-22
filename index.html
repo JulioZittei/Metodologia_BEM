@@ -6,77 +6,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="vendors/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+    <header class="layout-header layout-header--home">
         <div class="container">
-            <img src="images/logo.png" width="100" heigh="35" alt="MyPilas">
+            
+            <nav class="navbar">
+                <img src="images/logo.png" width="100" heigh="35" alt="MyPilas">
+
+                <div class="navbar__menu">
+                    <button class="hamburger-button js-hamburger-button"></button>
+
+                    <ul class="menu js-menu">
+                        <li class="menu__item">
+                            <a href="#">Como funciona</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#plans">Planos e preços</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Contato</a>
+                        </li>
+                        <li class="menu__item menu__item--button">
+                            <a href="#" class="button button--login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
         </div>
     </header>
 
-    <div id="plans">
+    <section class="layout-introduction">
+        <div class="container">
+
+            <div class="introduction">
+                <h1 class="introduction__title">As finanças da sua empresa em ordem</h1>
+                <p class="introduction__subtitle">Software de gestão simples e prático para pequenos negócios</p>
+                <div class="introduction__action">
+                    <a href="#plans" class="button button--primary">Conheça os planos</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="layout-feedback">
+        <div class="container">
+
+            <div class="feedback">
+                 <blockquote cite="">
+                     Eu tinha perdido totalmente o controle da minha empresa.
+                     Depois que comecei a utilizar o MyPilas, me sinto mais organizado e confiante no futuro.
+                 </blockquote>
+
+                 <div class="feedback__author">
+                     <img src="images/joao-da-silva.jpg" width="180" height="180" alt="João da Silva">
+                     <p>João da Silva</p>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id=˜plans˜ class="layout-plans">
         <div class="container">
             <div class="row">
 
                 <div class="col-sm-4">
-                    <article>
-                        <h2>Autônomo</h2>
-                        <div>R$ 59,00/mês</div>
-                        <ul>
+                    <article class="plan">
+                        <h2 class="plan__title">Autônomo</h2>
+                        <div class="plan__price">R$ 59,00/mês</div>
+                        <ul class="plan__details">
                             <li>Até <strong>2 usuários</strong></li>
                             <li><strong>500MB</strong> de armazenamento</li>
                             <li>Lançamentos ilimitados</li>
                             <li>Acesso seguro</li>
                             <li>Sem fidelidade</li>
                         </ul>
-                        <footer>
-                            <a href="assine.html" class="button">Assinar</a>
+                        <footer class="plan__footer">
+                            <a href="sign.html" class="button button--sign">Assinar</a>
                         </footer>
                     </article>
                 </div>
 
                 <div class="col-sm-4">
-                    <article>
-                        <h2>Micro</h2>
-                        <div>R$ 89,00/mês</div>
-                        <ul>
+                    <article class="plan plan--most-popular">
+                        <h2 class="plan__title">Micro</h2>
+                        <div class="plan__price">R$ 89,00/mês</div>
+                        <ul class="plan__details">
                             <li>Até <strong>6 usuários</strong></li>
                             <li><strong>1GB</strong> de armazenamento</li>
                             <li>Lançamentos ilimitados</li>
                             <li>Acesso seguro</li>
                             <li>Sem fidelidade</li>
                         </ul>
-                        <footer>
-                            <a href="assine.html" class="button">Assinar</a>
+                        <footer class="plan__footer">
+                            <a href="sign.html" class="button button--sign">Assinar</a>
                         </footer>
                     </article>
                 </div>
 
-                <div class="col-sm-4">
-                    <article>
-                        <h2>Pequena</h2>
-                        <div>R$ 99,00/mês</div>
-                        <ul>
+                <div class="col-sm-4 last-col">
+                    <article class="plan">
+                        <h2 class="plan__title">Pequena</h2>
+                        <div class="plan__price">R$ 99,00/mês</div>
+                        <ul class="plan__details">
                             <li>Até <strong>10 usuários</strong></li>
                             <li><strong>5GB</strong> de armazenamento</li>
                             <li>Lançamentos ilimitados</li>
                             <li>Acesso seguro</li>
                             <li>Sem fidelidade</li>
                         </ul>
-                        <footer>
-                            <a href="assine.html" class="button">Assinar</a>
+                        <footer class="plan__footer">
+                            <a href="sign.html" class="button button--sign">Assinar</a>
                         </footer>
                     </article>
                 </div>
 
             </div>
-
         </div>
     </div>
 
-</body>
+    <footer class="layout-footer">
+        <div class="container">
 
+            <p>&copy; MyPilas. Todos os direitos reservados.</p>
+
+        </div>
+    </footer>
+
+    <script src="javascript/app.js"></script>
+</body>
 </html>

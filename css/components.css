@@ -1,0 +1,355 @@
+/*-------------------------------*\
+                PLAN
+\*-------------------------------*/
+
+.plan {
+    position: relative;
+
+    padding: 10px;
+    border:1px solid #95a4a5;
+
+    font-size: 1.4rem;
+}
+
+.plan--most-popular::after {
+    position: absolute;
+    top:-10px;
+    left: -10px;
+
+    padding: 0 10px;
+    box-shadow: 1px 1px #313131;
+
+    background-color: #c20303;
+    color: #fff;
+
+    font-size: 0.7142em;
+    line-height: 2.5;
+
+    content: "MAIS POPULAR";
+}
+
+.plan__title {
+    margin: -10px;
+    margin-bottom: 0;
+
+    background-color: #95a4a5;
+    color: #fff;
+
+    text-align: center;
+    line-height: 2.5;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.plan__price {
+    margin: 20px 0;
+
+    text-align: center;
+    font-size: 2em;
+}
+
+.plan__details {
+    padding: 0;
+    margin: 20px 0;
+
+    font-size: 1em;
+
+    list-style: none;
+}
+
+.plan__details > li {
+    text-align: center;
+    font-size: 1em;
+}
+
+.plan__footer {
+    text-align: center;
+    font-size: 1em;
+}
+
+/*-------------------------------*\
+               BUTTON
+\*-------------------------------*/
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    border:none;
+
+    background-color: #bbb;
+    color: #fff;
+    
+    text-decoration: none;
+    line-height: normal;
+}
+
+.button:hover, .button:focus {
+    background-color:#aaa ;
+    color:#fff;
+     
+    text-decoration: none;
+}
+
+.button--sign {
+    background-color: #127d00;
+}
+
+.button--sign:hover, .button--sign:focus {
+    background-color: #0e6400;
+}
+
+.button--login {
+    background-color: #127d00;
+}
+
+.button--login:hover, .button--login:focus {
+    background-color: #0e6400;
+}
+
+.button--primary {
+    border-radius: 10px;
+
+    background-color: #004b86;
+}
+
+.button--primary:hover, .button--primary:focus {
+    background-color: #003b6a;
+}
+
+/*-------------------------------*\
+            INTRODUCTION
+\*-------------------------------*/
+
+.introduction {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.introduction__title {
+    margin: 0;
+
+    color:#fff;
+
+    font-size: 3.375em;
+    line-height: 0.9;
+    text-shadow: 1px 1px #313131;
+}
+
+.introduction__subtitle {
+    margin: 60px 0;
+
+    color:#fff;
+
+    font-size: 1em;
+}
+
+.introduction__action {
+    font-size: 1em;
+}
+
+@media (min-width: 992px) {
+    .introduction {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size: 2.2rem;
+    }
+}
+
+/*-------------------------------*\
+            FEEDBACK
+\*-------------------------------*/
+
+.feedback {
+    font-size: 2.2rem;
+}
+
+@media (min-width:992px){
+    .feedback {
+        padding-left: 15%;
+        padding-right: 15%;
+
+        font-size: 2.8rem;
+
+    }
+}
+
+.feedback > blockquote {
+    position: relative;
+
+    margin: 0;
+    padding: 0 60px;
+
+    text-align: center;
+    font-size: 1em;
+}
+
+.feedback > blockquote::before {
+    position: absolute;
+    left: 0;
+    top: -0.3522em;
+
+    color: #ccc;
+
+    font-size: 8em;
+
+    content: "\201C";
+}
+
+.feedback__author {
+    margin-top: 40px;
+
+    text-align: center;
+    font-size: 0.7272em;
+}
+
+.feedback__author > img {
+    border-radius: 50%;
+}
+
+.feedback__author > p {
+    margin-top: 10px;
+}
+
+/*-------------------------------*\
+            NAVBAR
+\*-------------------------------*/
+
+.navbar {
+
+}
+
+.navbar--sign {
+    text-align: center;
+}
+
+.navbar__menu {
+    float: right;
+}
+
+/*-------------------------------*\
+        HAMBURGER-BUTTON
+\*-------------------------------*/
+
+.hamburger-button {
+    width: 24px;
+    height: 24px;
+    border: 0;
+
+    background: none;
+    background-image: url("../images/hamburger-button.png");
+
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .hamburger-button {
+        display: none;
+    }
+}
+
+/*-------------------------------*\
+                MENU
+\*-------------------------------*/
+
+.menu {
+    margin: 0;
+
+    font-size: 1.4rem;
+
+    list-style: none;
+}
+
+@media(max-width:991px) {
+    .menu {
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        padding: 20px;
+        display: none;
+
+        width: 200px;
+        margin: 0;
+        border-right: 1px solid #eee;
+
+        background-color: #fbfbfb;
+
+        font-size: 1.4rem;
+
+        list-style: none;
+    }
+
+    .menu--is-showing {
+        display: block;
+    }
+
+    .menu__item {
+        line-height: 3;
+    }
+
+    .menu__item--button {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width:992px) {
+    .menu__item {
+        display:inline-block;
+        padding-right: 20px;
+
+    }
+  
+    .menu__item:last-of-type {
+        padding-right: 0;
+    }  
+}
+
+/*-------------------------------*\
+            FORM-TITLE
+\*-------------------------------*/
+
+.form-title {
+    margin: 0;
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #ccc;
+
+    font-size: 2.6rem;
+    font-weight: normal;
+    color:#004b86;
+}
+
+/*-------------------------------*\
+            FORM-GROUP
+\*-------------------------------*/
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group > label{
+    display: block;
+
+    font-weight: bold;
+}
+
+/*-------------------------------*\
+            FIELD
+\*-------------------------------*/
+
+.field {
+    display: block;
+    width: 100%;
+    height: 2.8em;
+
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background-color: #fff;
+
+    font-size: 1.4em;
+
+}
+
